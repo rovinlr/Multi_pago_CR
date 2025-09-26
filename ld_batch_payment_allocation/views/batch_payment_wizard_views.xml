@@ -35,10 +35,12 @@
                             <field name="residual_in_company_currency" widget="monetary" readonly="1"/>
                             <field name="amount_to_pay"/>
                             <field name="currency_id" readonly="1"/>
+                            <field name="to_delete" widget="boolean_toggle"/>
                         </list>
                     </field>
                 </group>
                 <footer>
+                    <button name="action_remove_selected_lines" string="Remove Selected Lines" type="object" class="btn-secondary"/>
                     <button string="Cancel" class="btn-secondary" special="cancel"/>
                     <button name="action_allocate" string="Generate Payment" type="object" class="btn-primary"/>
                 </footer>
