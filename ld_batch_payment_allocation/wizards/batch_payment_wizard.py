@@ -259,6 +259,7 @@ class BatchPaymentAllocationWizardLine(models.TransientModel):
                 rec.amount_to_pay = 0.0
 
 
+    @api.onchange("move_id")
     def _onchange_move(self):
         for rec in self:
             rec.name = rec.move_id.name or ""
@@ -271,6 +272,7 @@ class BatchPaymentAllocationWizardLine(models.TransientModel):
                 rec.residual_in_invoice_currency = residual_invoice
                 # refresh payment-currency residual via wizard conversion
                 rec.residual_in_payment_currency = rec.wizard_id._convert_amount(residual_company, rec.wizard_id.payment_date)
+                rec.amount_to_pay = rec.residual_in_payment_currency
 
     def action_delete_line(self):
         self.unlink()
