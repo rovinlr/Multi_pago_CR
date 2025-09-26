@@ -23,13 +23,16 @@
                         <field name="communication"/>
                     </group>
                 </group>
-                <separator string="Open Invoices"/>
+                <separator string="Open Items"/>
                 <group col="4">
                     <field name="line_ids" nolabel="1" colspan="4">
                         <list editable="bottom">
+                            <field name="move_line_id" invisible="1"/>
                             <field name="invoice_currency_id" invisible="1" column_invisible="1" nolabel="1"/>
                             <field name="company_currency_id" invisible="1" column_invisible="1" nolabel="1"/>
-                            <field name="move_id" options="{'no_create': True, 'no_open': False}"/>
+                            <field name="name" readonly="1" string="Number"/>
+                            <field name="line_type" readonly="1"/>
+                            <field name="move_id" readonly="1" options="{'no_create': True, 'no_open': False}"/>
                             <field name="invoice_date" readonly="1"/>
                             <field name="residual_in_invoice_currency" widget="monetary" readonly="1"/>
                             <field name="residual_in_company_currency" widget="monetary" readonly="1"/>
