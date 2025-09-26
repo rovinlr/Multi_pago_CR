@@ -15,7 +15,7 @@
                         <field name="journal_id"/>
                         <field name="payment_method_line_id"/>
                         <field name="payment_date"/>
-                        <field name="payment_currency_id"/>
+                        <field name="payment_currency_id" readonly="1"/>
                         <field name="allocation_mode"/>
                         <field name="rate_source"/>
                         <field name="custom_rate" invisible="rate_source == 'company'"/>
@@ -23,27 +23,25 @@
                         <field name="communication"/>
                     </group>
                 </group>
-                <separator string="Open Items"/>
+
+                <separator string="Open Invoices"/>
                 <group col="4">
                     <field name="line_ids" nolabel="1" colspan="4">
                         <list editable="bottom">
-                            <field name="move_line_id" invisible="1"/>
+                            <!-- hidden but loaded currency fields so monetary widget shows symbols -->
                             <field name="invoice_currency_id" invisible="1" column_invisible="1" nolabel="1"/>
                             <field name="company_currency_id" invisible="1" column_invisible="1" nolabel="1"/>
-                            <field name="name" readonly="1" string="Number"/>
-                            <field name="line_type" readonly="1"/>
-                            <field name="move_id" readonly="1" options="{'no_create': True, 'no_open': False}"/>
+                            <field name="move_id" options="{'no_create': True, 'no_open': False}"/>
                             <field name="invoice_date" readonly="1"/>
                             <field name="residual_in_invoice_currency" widget="monetary" readonly="1"/>
                             <field name="residual_in_company_currency" widget="monetary" readonly="1"/>
                             <field name="amount_to_pay"/>
                             <field name="currency_id" readonly="1"/>
-                            <field name="to_delete" widget="boolean_toggle"/>
                         </list>
                     </field>
                 </group>
+
                 <footer>
-                    <button name="action_remove_selected_lines" string="Remove Selected Lines" type="object" class="btn-secondary"/>
                     <button string="Cancel" class="btn-secondary" special="cancel"/>
                     <button name="action_allocate" string="Generate Payment" type="object" class="btn-primary"/>
                 </footer>

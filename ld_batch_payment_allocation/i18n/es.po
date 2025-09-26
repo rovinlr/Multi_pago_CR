@@ -1,0 +1,164 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ld_batch_payment_allocation 19.0\n"
+"POT-Creation-Date: 2025-09-24 00:00+0000\n"
+"PO-Revision-Date: 2025-09-24 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: ld_batch_payment_allocation
+msgid "Batch Payment Allocation"
+msgstr "Asignación de pagos por lotes"
+
+#. module: ld_batch_payment_allocation
+msgid "Pagos por Lotes"
+msgstr "Pagos por Lotes"
+
+#. module: ld_batch_payment_allocation
+msgid "Payment Journal"
+msgstr "Diario de pago"
+
+#. module: ld_batch_payment_allocation
+msgid "Payment Method"
+msgstr "Método de pago"
+
+#. module: ld_batch_payment_allocation
+msgid "Payment Date"
+msgstr "Fecha de pago"
+
+#. module: ld_batch_payment_allocation
+msgid "Payment Currency"
+msgstr "Moneda de pago"
+
+#. module: ld_batch_payment_allocation
+msgid "Allocation Mode"
+msgstr "Modo de asignación"
+
+#. module: ld_batch_payment_allocation
+msgid "One Grouped Payment"
+msgstr "Un pago agrupado"
+
+#. module: ld_batch_payment_allocation
+msgid "One Payment per Invoice"
+msgstr "Un pago por factura"
+
+#. module: ld_batch_payment_allocation
+msgid "FX Rate Source"
+msgstr "Fuente del tipo de cambio"
+
+#. module: ld_batch_payment_allocation
+msgid "Company Rates (res.currency.rate)"
+msgstr "Tasas de la compañía (res.currency.rate)"
+
+#. module: ld_batch_payment_allocation
+msgid "Custom Rate (1 Company CCY -> Payment CCY)"
+msgstr "Tasa personalizada (1 Moneda compañía → Moneda de pago)"
+
+#. module: ld_batch_payment_allocation
+msgid "Total to Pay"
+msgstr "Total a pagar"
+
+#. module: ld_batch_payment_allocation
+msgid "Memo / Reference"
+msgstr "Memo / Referencia"
+
+#. module: ld_batch_payment_allocation
+msgid "Open Invoices"
+msgstr "Facturas abiertas"
+
+#. module: ld_batch_payment_allocation
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: ld_batch_payment_allocation
+msgid "Number"
+msgstr "Número"
+
+#. module: ld_batch_payment_allocation
+msgid "Invoice Date"
+msgstr "Fecha de factura"
+
+#. module: ld_batch_payment_allocation
+msgid "Residual (Payment Currency)"
+msgstr "Saldo (Moneda de pago)"
+
+#. module: ld_batch_payment_allocation
+msgid "Residual (Company Currency)"
+msgstr "Saldo (Moneda de la compañía)"
+
+#. module: ld_batch_payment_allocation
+msgid "Residual (Invoice Currency)"
+msgstr "Saldo (Moneda de la factura)"
+
+#. module: ld_batch_payment_allocation
+msgid "Amount to Pay"
+msgstr "Importe a pagar"
+
+#. module: ld_batch_payment_allocation
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: ld_batch_payment_allocation
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: ld_batch_payment_allocation
+msgid "Generate Payment"
+msgstr "Generar pago"
+
+#. module: ld_batch_payment_allocation
+msgid "Payments"
+msgstr "Pagos"
+
+#. module: ld_batch_payment_allocation
+msgid "Partner"
+msgstr "Contacto"
+
+#. module: ld_batch_payment_allocation
+msgid "Partner Type"
+msgstr "Tipo de contacto"
+
+#. module: ld_batch_payment_allocation
+msgid "Customer"
+msgstr "Cliente"
+
+#. module: ld_batch_payment_allocation
+msgid "Vendor"
+msgstr "Proveedor"
+
+#. module: ld_batch_payment_allocation
+msgid "Company"
+msgstr "Compañía"
+
+#. module: ld_batch_payment_allocation
+msgid "Company Currency"
+msgstr "Moneda de la compañía"
+
+#. module: ld_batch_payment_allocation
+msgid "Invoice Currency"
+msgstr "Moneda de la factura"
+
+#. module: ld_batch_payment_allocation
+msgid "There are no invoice lines to pay."
+msgstr "No hay líneas de factura para pagar."
+
+#. module: ld_batch_payment_allocation
+msgid "Please select a Payment Journal."
+msgstr "Selecciona un diario de pago."
+
+#. module: ld_batch_payment_allocation
+msgid "The selected journal has no compatible payment method."
+msgstr "El diario seleccionado no tiene un método de pago compatible."
+
+#. module: ld_batch_payment_allocation
+msgid "Please set a positive Amount to Pay for at least one invoice."
+msgstr "Ingresa un Importe a pagar positivo para al menos una factura."
+
+#. module: ld_batch_payment_allocation
+msgid "No payments were created. Check the amounts to pay."
+msgstr "No se crearon pagos. Revisa los importes a pagar."

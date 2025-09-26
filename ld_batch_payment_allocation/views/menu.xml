@@ -9,9 +9,9 @@
         <field name="context">{}</field>
     </record>
 
-    <menuitem id="menu_ld_batch_pay_root"
-              name="Batch Payments"
-              parent="account.menu_finance"
-              sequence="96"
+    <menuitem id="menu_ld_batch_pay_entries"
+              name="Pagos por Lotes"
+              parent="account.menu_finance_entries"
+              sequence="32"
               action="action_open_batch_payment_allocation_wizard"/>
 </odoo>
